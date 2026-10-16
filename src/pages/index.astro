@@ -31,54 +31,60 @@ const latestNotes = allNotes
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-12">Hello World!</h1>
+		<h1 class="title mb-8">hi im yongqing</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, a simple starter that you can use to create your website or blog.
-			If you want to know more about how you can customise me, add more posts, and make it your own,
-			click on the GitHub icon link below and it will take you to my repo.
+			A computer engineering major @ NTU from Singapore and I like working with kind people on
+			interesting problems :3
 		</p>
+
+		<ul class="mb-4 list-disc pl-6">
+			<b>things</b>
+			<li>love all things computers from software to hardware</li>
+			<li>
+				I believe in the right to repair movement, digital freedom, privacy rights and generally
+				open source stuff
+			</li>
+		</ul>
+
+		<p class="mb-8">If anything you read here interests you, let me know.</p>
 		<SocialList />
 	</section>
-	{
-		pinnedPosts.length > 0 && (
-			<section class="mt-16">
-				<h2 class="title mb-6 text-xl">Pinned Posts</h2>
-				<ul class="space-y-4" role="list">
-					{pinnedPosts.map((p) => (
-						<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
-							<PostPreview post={p} />
-						</li>
-					))}
-				</ul>
-			</section>
-		)
-	}
-	<section class="mt-16">
-		<h2 class="title text-accent mb-6 text-xl"><a href="/posts/">Posts</a></h2>
-		<ul class="space-y-4" role="list">
-			{
-				latestPosts.map((p) => (
+	{pinnedPosts.length > 0 && (
+		<section class="mt-16">
+			<h2 class="title mb-6 text-xl">Pinned Posts</h2>
+			<ul class="space-y-4" role="list">
+				{pinnedPosts.map((p) => (
 					<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
 						<PostPreview post={p} />
 					</li>
-				))
-			}
+				))}
+			</ul>
+		</section>
+	)}
+	<section class="mt-16">
+		<h2 class="title text-accent mb-6 text-xl">
+			<a href="/posts/">Posts</a>
+		</h2>
+		<ul class="space-y-4" role="list">
+			{latestPosts.map((p) => (
+				<li class="grid gap-1 sm:grid-cols-[auto_1fr]">
+					<PostPreview post={p} />
+				</li>
+			))}
 		</ul>
 	</section>
-	{
-		latestNotes.length > 0 && (
-			<section class="mt-16">
-				<h2 class="title text-accent mb-6 text-xl">
-					<a href="/notes/">Notes</a>
-				</h2>
-				<ul class="space-y-6" role="list">
-					{latestNotes.map((note) => (
-						<li>
-							<Note note={note} as="h3" isPreview />
-						</li>
-					))}
-				</ul>
-			</section>
-		)
-	}
+	{latestNotes.length > 0 && (
+		<section class="mt-16">
+			<h2 class="title text-accent mb-6 text-xl">
+				<a href="/notes/">Notes</a>
+			</h2>
+			<ul class="space-y-6" role="list">
+				{latestNotes.map((note) => (
+					<li>
+						<Note note={note} as="h3" isPreview />
+					</li>
+				))}
+			</ul>
+		</section>
+	)}
 </PageLayout>
