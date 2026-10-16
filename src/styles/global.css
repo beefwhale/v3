@@ -16,48 +16,49 @@
 @property --color-global-bg {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: oklch(98.48% 0 0);
+	initial-value: #f7f2fc;
 }
 @property --color-global-text {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: oklch(26.99% 0.0096 235.05);
+	initial-value: #342742;
 }
 @property --color-muted {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: oklch(44.6% 0.03 256.802);
+	initial-value: #746180;
 }
 @property --color-link {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: oklch(55.44% 0.0431 185.69);
+	initial-value: #087a80;
 }
 @property --color-accent {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: oklch(55.27% 0.195 19.06);
+	initial-value: #a52a78;
 }
 @property --color-accent-2 {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: oklch(18.15% 0 0);
+	initial-value: #6941a5;
 }
 @property --color-quote {
 	syntax: "<color>";
 	inherits: true;
-	initial-value: oklch(55.27% 0.195 19.06);
+	initial-value: #a52a78;
 }
 
 /* you could refactor below to use light-dark(), depending on your target audience */
 @theme {
-	--color-global-bg: oklch(98.48% 0 0);
-	--color-global-text: oklch(26.99% 0.0096 235.05);
-	--color-muted: oklch(44.6% 0.03 256.802);
-	--color-link: oklch(55.44% 0.0431 185.69);
-	--color-accent: oklch(55.27% 0.195 19.06);
-	--color-accent-2: oklch(18.15% 0 0);
-	--color-quote: oklch(55.27% 0.195 19.06);
+	--color-global-bg: #f7f2fc;
+	--color-global-text: #342742;
+	--color-muted: #746180;
+	--color-link: #087a80;
+	--color-accent: #a52a78;
+	--color-accent-2: #6941a5;
+	--color-accent-3: #6941a5;
+	--color-quote: #a52a78;
 }
 
 @layer base {
@@ -72,13 +73,14 @@
 
 		&[data-theme="dark"] {
 			color-scheme: dark;
-			--color-global-bg: oklch(23.64% 0.0045 248);
-			--color-global-text: oklch(83.54% 0 264);
-			--color-muted: oklch(70.7% 0.022 261.325);
-			--color-link: oklch(70.44% 0.1133 349);
-			--color-accent: oklch(70.91% 0.1415 163.7);
-			--color-accent-2: oklch(94.66% 0 0);
-			--color-quote: oklch(94.8% 0.106 136.49);
+			--color-global-bg: #241b2f;
+			--color-global-text: #eee7f5;
+			--color-muted: #b6a5ca;
+			--color-link: #36f9f6;
+			--color-accent: #c555a5;
+			--color-accent-2: #bae67e;
+			--color-accent-3: #c9a7ff;
+			--color-quote: #fede5d;
 		}
 
 		--color-mode-transition-duration: 300ms;
