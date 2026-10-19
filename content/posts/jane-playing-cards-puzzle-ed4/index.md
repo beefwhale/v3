@@ -3,7 +3,7 @@ title: The puzzle inside Jane Street's Edition IV playing cards
 description: The puzzle inside Jane Street's Edition IV playing cards
 publishDate: 9 Sep 2026
 tags:
-- blogs
+- blog
 pinned: false
 draft: false
 ---

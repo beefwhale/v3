@@ -3,7 +3,7 @@ title: A recap of my time in Ngee Ann + plans before university
 description: A recap of my time in Ngee Ann + plans before university
 publishDate: 18 Feb 2024
 tags:
-- blogs
+- blog
 pinned: false
 draft: false
 ---

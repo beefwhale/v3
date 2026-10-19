@@ -3,7 +3,7 @@ title: AWS Build On Hackathon 2022 Showcase
 description: AWS Build On Hackathon 2022 Showcase
 publishDate: 17 Oct 2022
 tags:
-- hackathons
+- hackathon
 pinned: false
 draft: false
 coverImage:

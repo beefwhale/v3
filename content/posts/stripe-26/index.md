@@ -3,7 +3,7 @@ title: The kind of person I would like to become
 description: The kind of person I would like to become
 publishDate: 16 Sep 2026
 tags:
-- blogs
+- blog
 pinned: false
 draft: false
 ---

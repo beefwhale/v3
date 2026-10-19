@@ -3,7 +3,7 @@ title: Side doors?
 description: Side doors?
 publishDate: 18 Feb 2026
 tags:
-- blogs
+- blog
 pinned: false
 draft: false
 ---
