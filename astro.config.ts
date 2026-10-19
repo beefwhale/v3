@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { createRequire } from "node:module";
 import { satteri, satteriHeadingIdsPlugin } from "@astrojs/markdown-satteri";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
@@ -8,8 +9,10 @@ import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import robotsTxt from "astro-robots-txt";
 import webmanifest from "astro-webmanifest";
+import { satteriKatex } from "satteri-katex";
 import { satteriAdmonitionsPlugin } from "./src/plugins/admonitions";
 import { satteriGithubCardPlugin } from "./src/plugins/github-cards";
+import { satteriMathLabelsPlugin } from "./src/plugins/math";
 import {
 	satteriAutolinkHeadingsPlugin,
 	satteriExternalLinksPlugin,
@@ -18,6 +21,9 @@ import {
 	satteriUnwrapImagesPlugin,
 } from "./src/plugins/satteri";
 import { expressiveCodeOptions, siteConfig } from "./src/site.config";
+
+// Resolve the stylesheet from the plugin's own KaTeX dependency, including under pnpm.
+const pluginRequire = createRequire(createRequire(import.meta.url).resolve("satteri-katex"));
 
 // https://astro.build/config
 export default defineConfig({
@@ -67,8 +73,10 @@ export default defineConfig({
 	],
 	markdown: {
 		processor: satteri({
-			features: { directive: true },
+			features: { directive: true, math: { singleDollarTextMath: false } },
 			mdastPlugins: [
+				satteriMathLabelsPlugin(),
+				satteriKatex(),
 				satteriUnwrapImagesPlugin(),
 				satteriReadingTimePlugin(),
 				satteriGithubCardPlugin(),
@@ -83,6 +91,9 @@ export default defineConfig({
 		}),
 	},
 	vite: {
+		resolve: {
+			alias: { "satteri-katex-styles.css": pluginRequire.resolve("katex/dist/katex.min.css") },
+		},
 		plugins: [tailwind(), rawFonts([".ttf", ".woff"])],
 	},
 	env: {
