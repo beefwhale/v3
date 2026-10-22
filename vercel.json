@@ -1,20 +1,23 @@
 {
-    "rewrites": [
+    "routes": [
       {
-        "source": "/v1",
-        "destination": "https://beefwhale.github.io/v1/"
+        "src": "^/v1/?$",
+        "dest": "https://beefwhale.github.io/v1/"
       },
       {
-        "source": "/v1/:path*",
-        "destination": "https://beefwhale.github.io/v1/:path*"
+        "src": "^/v1/(.*)$",
+        "dest": "https://beefwhale.github.io/v1/$1"
       },
       {
-        "source": "/v2",
-        "destination": "https://beefwhale.github.io/v2/"
+        "src": "^/v2/?$",
+        "dest": "https://beefwhale.github.io/v2/"
       },
       {
-        "source": "/v2/:path*",
-        "destination": "https://beefwhale.github.io/v2/:path*"
+        "src": "^/v2/(.*)$",
+        "dest": "https://beefwhale.github.io/v2/$1"
+      },
+      {
+        "handle": "filesystem"
       }
     ]
   }
