@@ -1,0 +1,20 @@
+{
+    "rewrites": [
+      {
+        "source": "/v1",
+        "destination": "https://beefwhale.github.io/v1/"
+      },
+      {
+        "source": "/v1/:path*",
+        "destination": "https://beefwhale.github.io/v1/:path*"
+      },
+      {
+        "source": "/v2",
+        "destination": "https://beefwhale.github.io/v2/"
+      },
+      {
+        "source": "/v2/:path*",
+        "destination": "https://beefwhale.github.io/v2/:path*"
+      }
+    ]
+  }
