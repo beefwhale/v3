@@ -1,9 +1,10 @@
 ---
-title: Hello, Welcome
-description: An introduction to using the note feature in Astro Cactus
-publishDate: "2024-10-14T11:23:00Z"
+title: My blog is now on Astro!
+description: v3 blogwhale
+publishDate: 23 Oct 2026
 ---
 
-Hi, Hello. This is an example note feature included with Astro Cactus 🌵
+I've gotten annoyed with how anoying it was to write my `.md` files so I've made the switch to Astro Cactus 🌵 which has been very easy to set up!
 
-They're for shorter, more concise posts that you'd like to share. They generally don't include headings, but hey, it's entirely up to you!
+Love how fast the site is too. You can find other variations of my site at `/v1` and `/v2`
+
