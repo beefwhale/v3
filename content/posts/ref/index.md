@@ -165,7 +165,7 @@ function demo() {
 
 ## Images
 
-Image in the same folder: `src/content/post/markdown-elements/logo.png`
+Image in the same folder: `src/content/post/ref/logo.png`
 
 ![Astro theme cactus logo](./logo.png)
 
