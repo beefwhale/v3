@@ -8,7 +8,7 @@ import PageLayout from "@/layouts/Base.astro";
 import { collectionDateSort } from "@/utils/date";
 
 // Posts
-const MAX_POSTS = 10;
+const MAX_POSTS = 6;
 const allPosts = await getAllPosts();
 const allPostsByDate = allPosts.sort(collectionDateSort) as CollectionEntry<"post">[];
 const latestPosts = allPostsByDate.slice(0, MAX_POSTS);
@@ -31,7 +31,7 @@ const latestNotes = allNotes
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-8">hi im yongqing</h1>
+		<h1 class="title mb-8">hi im yongqing 🐄🐳</h1>
 		<p class="mb-4">
 			A computer engineering major @ NTU from Singapore and I like working with kind people on
 			interesting problems :3

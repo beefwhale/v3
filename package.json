@@ -4,8 +4,8 @@
 	"version": "8.3.0",
 	"scripts": {
 		"postinstall": "npm rebuild sharp --force",
-		"dev": "astro dev",
-		"start": "astro dev",
+		"dev": "astro dev --force",
+		"start": "astro dev --force",
 		"build": "astro build",
 		"postbuild": "pagefind --site dist",
 		"preview": "astro preview",

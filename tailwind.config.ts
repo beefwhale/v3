@@ -23,6 +23,17 @@ export default {
 							border: "1px dotted #666",
 							borderRadius: "2px",
 						},
+						":not(pre) > code": {
+							backgroundColor: "color-mix(in srgb, var(--color-accent-3) 14%, transparent)",
+							padding: "0em 0.2em",
+							boxDecorationBreak: "clone",
+						},
+						"code::before": {
+							content: "none",
+						},
+						"code::after": {
+							content: "none",
+						},
 						kbd: {
 							"&:where([data-theme='dark'], [data-theme='dark'] *)": {
 								background: "var(--color-global-text)",

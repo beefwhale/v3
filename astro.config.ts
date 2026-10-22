@@ -13,6 +13,7 @@ import { satteriKatex } from "satteri-katex";
 import { satteriAdmonitionsPlugin } from "./src/plugins/admonitions";
 import { satteriGithubCardPlugin } from "./src/plugins/github-cards";
 import { satteriMathLabelsPlugin } from "./src/plugins/math";
+import { satteriMediaPlugin } from "./src/plugins/media";
 import {
 	satteriAutolinkHeadingsPlugin,
 	satteriExternalLinksPlugin,
@@ -80,6 +81,7 @@ export default defineConfig({
 				satteriUnwrapImagesPlugin(),
 				satteriReadingTimePlugin(),
 				satteriGithubCardPlugin(),
+				satteriMediaPlugin(),
 				satteriAdmonitionsPlugin(),
 			],
 			hastPlugins: [
