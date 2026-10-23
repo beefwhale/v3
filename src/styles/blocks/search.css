@@ -8,6 +8,7 @@
 	--pf-outline-offset: none;
 	--pf-font: var(--font-mono);
 	--pf-text: var(--color-global-text);
+	--pf-mark: var(--color-accent-2);
 	--pf-text-secondary: var(--color-muted);
 	--pf-skeleton: var(--color-global-bg);
 	--pf-icon-search: url("data:image/svg+xml,%3Csvg fill='none' height='16' width='16' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M0 0h24v24H0z' stroke='none'%3E%3C/path%3E%3Cpath d='M3 10a7 7 0 1 0 14 0 7 7 0 1 0-14 0M21 21l-6-6'%3E%3C/path%3E%3C/svg%3E");
@@ -48,28 +49,26 @@ dialog.pf-modal::backdrop {
 }
 
 .pf-modal-body {
-	--pf-hover: var(--color-global-bg);
+	--pf-hover: color-mix(in srgb, var(--color-global-text) 4%, var(--color-global-bg));
+
+	.pf-result-card,
+	.pf-heading-chip {
+		--pf-border: color-mix(in srgb, var(--color-global-text) 12%, transparent);
+		--pf-border-focus: color-mix(in srgb, var(--color-global-text) 24%, transparent);
+		--pf-border-radius: 10px;
+		--pf-shadow-sm: none;
+		background: var(--pf-hover);
+	}
 
 	.pf-result-link,
 	.pf-heading-link {
-		background-size: 100% 6px;
-		background-position: bottom;
-		background-repeat: repeat-x;
-		background-image: linear-gradient(
-			transparent,
-			transparent 5px,
-			var(--color-global-text) 5px,
-			var(--color-global-text)
-		);
+		background-image: none;
+		text-decoration: none;
 
 		&:hover {
-			text-decoration: none;
-			background-image: linear-gradient(
-				transparent,
-				transparent 4px,
-				var(--color-link) 4px,
-				var(--color-link)
-			);
+			text-decoration: underline;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 3px;
 		}
 	}
 
@@ -77,11 +76,11 @@ dialog.pf-modal::backdrop {
 		align-self: flex-start;
 	}
 
-	.pf-heading-excerpt {
-		mark {
-			--pf-mark: var(--color-accent-2);
-			font-weight: var(--font-weight-semibold);
-		}
+	mark {
+		--pf-mark: var(--color-accent-2);
+		color: var(--pf-mark);
+		background: transparent;
+		font-weight: var(--font-weight-semibold);
 	}
 }
 
