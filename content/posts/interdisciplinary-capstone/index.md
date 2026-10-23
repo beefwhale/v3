@@ -53,6 +53,8 @@ Grade: A+
 
 ## Gallery
 
+<div class="image-grid">
+
 ![Gallery image 1](./d7ccec2e5d91.png)
 
 ![Gallery image 2](./31d1354c91cb.png)
@@ -62,3 +64,5 @@ Grade: A+
 ![Gallery image 4](./3986feedfb68.png)
 
 ![Gallery image 5](./ab6b60e65442.png)
+
+</div>

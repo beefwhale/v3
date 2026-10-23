@@ -141,6 +141,10 @@ PS: Since you've reached the end.. I greatly appreciate any form of feedback for
 
 ## Gallery
 
+<div class="image-grid">
+
 ![Gallery image 1](./7ba6746ac0f1.jpeg)
 
 ![Gallery image 2](./e28ffd781cd4.jpeg)
+
+</div>

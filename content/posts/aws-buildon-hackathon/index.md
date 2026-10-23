@@ -91,6 +91,8 @@ Champion (Tertiary Category, ZALORA)
 
 ## Gallery
 
+<div class="image-grid">
+
 ![Gallery image 1](./67867309d0e7.png)
 
 ![Gallery image 2](./60a1c7bcf459.png)
@@ -106,3 +108,5 @@ Champion (Tertiary Category, ZALORA)
 ![Gallery image 7](./074f7d9a8e9b.png)
 
 ![Gallery image 8](./4962110be92d.png)
+
+</div>

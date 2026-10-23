@@ -140,6 +140,8 @@ Until then, let us know what you think. toodles~!
 
 ## Gallery
 
+<div class="image-grid">
+
 ![Gallery image 1](./6ca1d29db81f.jpg)
 
 ![Gallery image 2](./00a209e00c3c.jpg)
@@ -149,3 +151,5 @@ Until then, let us know what you think. toodles~!
 ![Gallery image 4](./054777d883dc.jpg)
 
 ![Gallery image 5](./5f3586671362.jpg)
+
+</div>

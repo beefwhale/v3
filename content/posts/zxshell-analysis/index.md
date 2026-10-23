@@ -40,6 +40,10 @@ Grade: A
 
 ## Gallery
 
+<div class="image-grid">
+
 ![Gallery image 1](./6e002dd29749.png)
 
 ![Gallery image 2](./55115ff12172.png)
+
+</div>

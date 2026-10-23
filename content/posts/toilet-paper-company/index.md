@@ -245,6 +245,8 @@ I don't know if I'll go back to entrepreneurship honestly I think I gotta let th
 
 ## Gallery
 
+<div class="image-grid">
+
 ![Gallery image 1](./a2e7dc0fd3dd.png)
 
 ![Gallery image 2](./e18afcff6b4e.png)
@@ -252,3 +254,5 @@ I don't know if I'll go back to entrepreneurship honestly I think I gotta let th
 ![Gallery image 3](./d57957bf0bf9.png)
 
 ![Gallery image 4](./573d7a1dcc95.png)
+
+</div>
