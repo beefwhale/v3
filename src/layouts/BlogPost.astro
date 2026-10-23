@@ -7,6 +7,7 @@ import TOC from "@/components/blog/TOC.astro";
 import WebMentions from "@/components/blog/webmentions/index.astro";
 
 import BaseLayout from "./Base.astro";
+import ImageZoom from "astro-image-zoom/ImageZoom.astro";
 
 interface Props {
 	post: CollectionEntry<"post">;
@@ -29,13 +30,15 @@ const readingTime: string = remarkPluginFrontmatter.readingTime;
 	}}
 >
 	<article class="grow break-words" data-pagefind-body>
-		<div id="blog-hero" class="mb-12"><Masthead content={post} readingTime={readingTime} /></div>
+		<div id="blog-hero" class="mb-12">
+			<Masthead content={post} readingTime={readingTime} />
+		</div>
 		<div class="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
 			{!!headings.length && <TOC headings={headings} />}
-			<div
-				class="prose prose-sm prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-muted prose-headings:hover:before:text-accent sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none"
-			>
-				<slot />
+			<div class="prose prose-sm prose-headings:font-semibold prose-headings:text-accent-2 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-muted prose-headings:hover:before:text-accent sm:prose-headings:before:content-['#'] sm:prose-th:before:content-none">
+				<ImageZoom>
+					<slot />
+				</ImageZoom>
 				<WebMentions />
 			</div>
 		</div>
@@ -62,6 +65,22 @@ const readingTime: string = remarkPluginFrontmatter.readingTime;
 </BaseLayout>
 
 <style is:global>
+	.image-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+		gap: 0.75rem;
+	}
+	.image-grid > p {
+		margin: 0;
+		min-width: 0;
+	}
+	.image-grid img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 1;
+		object-fit: cover;
+		margin: 0;
+	}
 	.post-figure {
 		margin-block: 2rem;
 	}

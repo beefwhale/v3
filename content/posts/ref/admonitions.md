@@ -114,6 +114,30 @@ Outputs:
 This is a note with a custom title.
 :::
 
+## Tiled image galleries
+
+To arrange images in a responsive grid, wrap normal Markdown images in a `<div class="image-grid">`:
+
+```md
+## Gallery
+
+<div class="image-grid">
+
+![First photo](./photo1.jpg)
+
+![Second photo](./photo2.jpg)
+
+![Third photo](./photo3.jpg)
+
+</div>
+```
+
+Keep a blank line after the opening `<div>`, between images, and before `</div>` so Markdown images are processed correctly. Image paths are relative to your Markdown file.
+
+The grid displays square, cropped thumbnails and adjusts its columns to the available width. Clicking a thumbnail opens the full image with image zoom. Images remain part of the post-wide zoom gallery; the grid only changes their layout.
+
+You can use multiple grids in a post, and the `Gallery` heading is optional. Images outside a grid keep their normal layout.
+
 ## GitHub Repository Cards
 
 You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.
