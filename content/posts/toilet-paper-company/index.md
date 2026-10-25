@@ -4,7 +4,7 @@ description: documenting the start to the end of time of the first company I cre
   rip 3ply.
 publishDate: 21 Aug 2026
 tags:
-- blogs
+- blog
 pinned: false
 draft: false
 coverImage:
