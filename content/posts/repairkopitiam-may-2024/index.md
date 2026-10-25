@@ -136,7 +136,6 @@ This workshop was definitely more rewarding than I expected even if our attempts
 
 PS: Since you've reached the end.. I greatly appreciate any form of feedback for my writing, as I constantly try to improve my documentation skills with each post. Do not hesitate to contact me with ur suggestions/improvements!
 
-## References
 [^Carbon-Motor-Sparking]:<https://forum.allaboutcircuits.com/threads/motor-carbon-brush-sparking-why-it-happens-and-how-can-i-fix-it.165109/#:~:text=Some%20sparking%20at%20the%20brushes,dust%20between%20the%20commutator%20segments.>
 
 ## Gallery

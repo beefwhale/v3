@@ -1,8 +1,0 @@
-overrides:
-  sharp: ^0.35.4
-  satteri-katex>satteri: ^0.10.5
-allowBuilds:
-  "@biomejs/biome": true
-  "@tailwindcss/oxide": true
-  esbuild: true
-  sharp: true

@@ -236,6 +236,5 @@ gcc -shared 51.c
 ssh-keygen -D ./a.out
 ```
 
-## References
 [^source1]: <https://securiumsolutions.com/privilege-escalation-with-suid-in-linux/>
 [^ssh-keygen-source1]: Lab 51 Solution : <https://www.youtube.com/watch?v=14mIjpOXnrM&t=2878s>
